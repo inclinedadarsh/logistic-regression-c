@@ -1,4 +1,5 @@
 #include "matrix.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 Matrix create_matrix(int rows, int cols) {
@@ -19,4 +20,14 @@ void free_matrix(Matrix *matrix) {
     free(matrix->data[i]);
   }
   free(matrix->data);
+}
+
+void print_matrix(Matrix *matrix) {
+  printf("\n");
+  for (int i = 0; i < matrix->rows; ++i) {
+    for (int j = 0; j < matrix->cols; ++j) {
+      printf("%f ", matrix->data[i][j]);
+    }
+    printf("\n");
+  }
 }
