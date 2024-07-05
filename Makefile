@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
-OBJS = 
+OBJS = matrix.o
 
 output: $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $@
