@@ -29,5 +29,9 @@ Grads backward_propagate(Matrix *a, Matrix *y, Matrix *X) {
   Grads grads;
   grads.dw = dw;
   grads.db = db;
+
+  free_matrix(&dz);
   return grads;
 }
+
+void free_grads(Grads *grads) { free_matrix(&grads->dw); }
