@@ -1,5 +1,5 @@
-#include "backward.h"
-#include "matrix.h"
+#include "../include/backward.h"
+#include "../include/matrix.h"
 
 Grads backward_propagate(Matrix *a, Matrix *y, Matrix *X) {
   int m = X->cols;

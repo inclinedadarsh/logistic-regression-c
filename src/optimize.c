@@ -1,6 +1,6 @@
-#include "optimize.h"
-#include "backward.h"
-#include "params.h"
+#include "../include/optimize.h"
+#include "../include/backward.h"
+#include "../include/params.h"
 
 void optimize(Params *params, Grads *grads, float lr) {
   int n = params->w.rows;

@@ -1,10 +1,10 @@
-#include "neuron.h"
-#include "backward.h"
-#include "cost.h"
-#include "forward.h"
-#include "matrix.h"
-#include "optimize.h"
-#include "params.h"
+#include "../include/neuron.h"
+#include "../include/backward.h"
+#include "../include/cost.h"
+#include "../include/forward.h"
+#include "../include/matrix.h"
+#include "../include/optimize.h"
+#include "../include/params.h"
 #include <stdbool.h>
 #include <stdio.h>
 

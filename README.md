@@ -8,7 +8,7 @@ I have divided all the modules in the respective files.
 
 To run the program, use the following command:
 ```sh
-make && ./output
+make && ./logistic_regression
 ```
 
 The command will create an `output` file and executes it.

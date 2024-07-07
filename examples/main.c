@@ -1,7 +1,7 @@
-#include "forward.h"
-#include "matrix.h"
-#include "neuron.h"
-#include "params.h"
+#include "../include/forward.h"
+#include "../include/matrix.h"
+#include "../include/neuron.h"
+#include "../include/params.h"
 #include <stdbool.h>
 
 int main(void) {

@@ -1,7 +1,2 @@
-*
-!*.c
-!*.h
-!Makefile
-!.gitignore
-!*.md
-
+*.o
+logistic_regression

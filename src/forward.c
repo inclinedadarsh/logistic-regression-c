@@ -1,6 +1,6 @@
-#include "forward.h"
-#include "activation.h"
-#include "matrix.h"
+#include "../include/forward.h"
+#include "../include/activation.h"
+#include "../include/matrix.h"
 
 Matrix forward_propagate(Params *params, Matrix *X) {
   int m = X->cols;

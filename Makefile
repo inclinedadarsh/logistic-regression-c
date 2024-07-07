@@ -1,15 +1,21 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
-OBJS = matrix.o rand_float.o params.o activation.o forward.o cost.o backward.o optimize.o neuron.o main.o
+CFLAGS = -Wall -Wextra -std=c99 -I./include
 
-output: $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $@ -lm
+SRCS = src/matrix.c src/rand_float.c src/params.c src/activation.c \
+       src/cost.c src/forward.c src/backward.c src/optimize.c src/neuron.c
+OBJS = $(SRCS:.c=.o)
 
-%.o: %.c %.h
-	$(CC) $(CFLAGS) -c $< -o $@ -lm
+EXEC = logistic_regression
 
-main.o: main.c
+all: $(EXEC)
+
+$(EXEC): $(OBJS) examples/main.o
+	$(CC) $(CFLAGS) $^ -o $@ -lm
+
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f (OBJS) output
+	rm -f $(OBJS) examples/main.o $(EXEC)
+
+.PHONY: all clean

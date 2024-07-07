@@ -1,6 +1,6 @@
-#include "params.h"
-#include "matrix.h"
-#include "rand_float.h"
+#include "../include/params.h"
+#include "../include/matrix.h"
+#include "../include/rand_float.h"
 #include <stdio.h>
 #include <stdlib.h>
 

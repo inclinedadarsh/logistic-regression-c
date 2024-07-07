@@ -1,5 +1,5 @@
-#include "cost.h"
-#include "matrix.h"
+#include "../include/cost.h"
+#include "../include/matrix.h"
 #include <math.h>
 
 float logloss(float a, float y) {
