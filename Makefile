@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -I./include
+CFLAGS = -Wall -Wextra -std=c99 -I./include -I./dataset
 
 SRCS = src/matrix.c src/rand_float.c src/params.c src/activation.c \
        src/cost.c src/forward.c src/backward.c src/optimize.c src/neuron.c
